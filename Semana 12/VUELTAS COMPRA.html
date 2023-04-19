@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>SUPERMERCADO EL BARATO</h2>
+    <h3>VUELTAS POR COMPRAS</h3>
+    <script>
+        producto=prompt("Ingrese nombre producto:");
+        precio=parseInt(prompt("Ingrese precio unitario:"));
+        cantidad=parseInt(prompt("Ingrese cantidad comprada:"));
+        
+        total=cantidad*precio;
+
+        alert("su valor a pagar en caja es..."+"\n"+total);
+        document.write("su valor a pagar en caja es...$"+total+"<br>",+"<br>");
+
+        pago=parseInt(prompt("Ingrese monto en efectivo pagado en casa"));
+        saldo=total-pago;
+
+        if(pago==total){
+            alert("TOME SU TIRILLA DE PAGO, GRACIAS POR SU COMPRA");
+        }else{
+            alert("TOME SU TIRILLA DE PAGO Y SUS VUELTAS"+saldo+",GRACIAS POR SU COMPRA");
+        }
+        document.write("*************************************************************");
+    </script>
+</body>
+</html>

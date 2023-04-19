@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREMIO SORPRESA</title>
+</head>
+<body>
+    <center>
+        <h1>SUPERMERCADO EL ECONOMICO</h1>
+        <h2>PREMIO SORPRESA</h2>
+        <script>
+            //Programa que permita capturar el nombre de un producto, su precio unitario y su cantidad, luego calcular total a pagar, muéstrelo por un mensaje de alerta al usuario, luego permita la captura de la forma de pago (Efectivo, Nequi o Tarjeta de crédito) y validar promoción de aniversario si paga en efectivo y por compras desde $50.0000 se le obsequia un taco de galletas sino una chocolatina, finalmente enviar mensaje Gracias por su compra//
+            const SPeso = new Intl.NumberFormat('es-CO',{
+            style: 'currency',
+            currency: 'COP',
+            minimumFractionDigits: 0
+            });
+        
+        //Entrada//
+            producto=prompt("Ingrese nombre producto");
+            pPOPrecio=parseInt(prompt("Ingrese el precio del producto"));
+            cantidad=parseInt(prompt("Ingrese cantidad a comprar"));
+            fpago=parseInt(prompt("Ingrese forma de pago: [1=Efectivo 2=Nequi 3=Tarjeta]"));
+            //PROCESO//
+            total=cantidad*precio;
+            //Salida//
+            alert("su valor a pagar en caja es:....$"+SPeso.format(total));
+            document.write("******************************************************************"+"<br>");
+            document.write("Producto comprado:..." + producto+ "&nbsp&nbsp" +"Precio producto..." + SPeso.format(precio)+"&nbsp&nbsp"+"cantidad comprada..." + cantidad+"<br>"+"<br>"+"<br>");
+            document.write("Su valor a pagar en caja es ..."+ SPeso.format(total)+"<br>");
+        //Proceso---- definicion de condicional ssi segun la forma de pago efectivo y compras >=50000//
+            if(fpago==1 && total>=50000)
+            document.write("Tome su obsequio sopresa por el aniversario...........Taco de Galletas");
+            else{document.write("Tome su obsequio sopresa por el aniversario...........Chocolatina"+"<br>")};
+            document.write("GRACIAS POR SU COMPRA"+"<br>");
+            document.write("************************************************************"+"<br>");
+        </script>
+    </center>
+</body>
+</html>
