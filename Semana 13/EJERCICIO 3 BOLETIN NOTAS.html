@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CICLO WHILE</title>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <img src="/IMG/incapp.png" alt="" width="150" height="150">
+        <h1>BOLETIN DE NOTAS PROGRAMACION WEB</h1>
+        <h2>MATERIA PAE02 JAVASCRIPT</h2>
+        <script>
+            let nota_STD, suma, prom;
+            suma=0;//ACUMULADOR
+            prom=0;//PROMEDIO
+            num=1;//CONTADOR DE NOTAS
+            //ENTRADA
+            nota_STD=prompt("Ingrese el nombre del estudiante");
+            //Proceso ciclo While
+            while (num<=3){
+                nota_STD=parseFloat(prompt("Ingrese la nota del estudiante:[1=Desempeño 2=Talleres 3=Examenes]"));
+            //acumulador o sumador de notas 
+            suma+=nota_STD;
+            //Contador de notas 
+            num++;
+            }
+            //validacion de la calificacion 
+            prom=suma/3;
+            if (prom>=3.0){
+                swal("Apreciado estudiante","Aprobaste la materia PAE","success");
+            }else {
+                swal("APRECIADO ESTUDIANTE","REPROBASTE MATERIA PAE","Error");
+            }
+            document.write("<br>");
+            document.write("NOTA FINAL STD PROGRAMACION ..."+prom.toFixed(2)+"<br>");
+
+        </script>
+    </center>
+</body>
+</html>

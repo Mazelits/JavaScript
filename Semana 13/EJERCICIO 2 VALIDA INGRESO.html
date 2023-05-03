@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALIDA INGRESO</title>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <h1>VALIDACION DE INGRESO</h1>
+        <h2>USUARIO TIENE 3 INTENTOS PARA INGRESAR</h2>
+        <script>
+            let datof;//variable ingresada por usuario
+            let=sw=0;//variable switch apagado
+            let clave=123;
+            //ciclo for
+            for (f=1;f<=3;f++){
+                datof=parseInt(prompt("INGRESE SU CONTRASEÑA DE ACCESO"));
+                //Condicional
+                if(datof==clave){
+                    swal("Estimado usuario","ACCESO PERMITIDO","Success");
+                document.write("Acceso Permitido");
+                sw=1;//variable cambia de valor (prendida)
+                break;
+                }
+            }
+            //Control de flujo programa para cuando nunca ingresa 
+            if(sw==0){
+                    swal("Estimado usuario","CUENTA BLOQUEADA","Error");
+                document.write("CUENTA BLOQUEADA");
+                }
+        </script>
+    </center>
+</body>
+</html>
