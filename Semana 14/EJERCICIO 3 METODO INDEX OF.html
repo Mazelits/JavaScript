@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX OFF</title>
+</head>
+<body>
+    <center>
+        <h1>METODO INDEX OFF</h1>
+        <h3>BUSQUEDA DE ELEMENTOS EN ARRAY</h3>
+        <br><br>
+        <p>Estudiante se encuantra en el indice No.</p>
+        <p id="std"></p>
+    <script>
+        //Creacion
+        let num;
+        let std=new Array();
+        //captura
+        num=parseInt(prompt("Ingrese cantidad de elementos a guardar arrays"));
+        for(i=0;i<num;i++){
+            std[i]=prompt("Ingrese nombre STD a guardar");
+        }
+        //BUSQUEDA
+        let datob=prompt("Ingrese dato a buscar...");
+        let find=std.indexOf(datob.trim());
+        //Evaluar si se encontro0 es encontrado y -1 no
+        if (find>-1){
+            document.getElementById("std").innerHTML=find+"..."+datob;
+        }else{
+            document.getElementById("std").innerHTML="ERROR NO SE LOGRO ENCONTRAR EL ELEMENTO DESEADO"+datob;
+        }
+
+    </script>
+    </center>
+</body>
+</html>
