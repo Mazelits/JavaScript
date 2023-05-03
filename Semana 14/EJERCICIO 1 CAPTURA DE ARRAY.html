@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTURA/LECTURA ARRAY</title>
+</head>
+<body>
+    <center>
+        <h1>CREACION Y LECTURA DE UN ARRAY</h1>
+        <h2>CICLO FOR</h2>
+        <p>A CONTINUACION SE IMPRIMEN LOS DATOS ALMACENADO EN ARRAY</p>
+        <script>
+            //Creacion de array 
+        let num;// NUMERO DE ELEMENTOS
+        let datos=new Array();//IBJETO  
+            //Caotura
+        num=parseInt(prompt("INGRESE CANTIDAD A GUARDAR EN ARRAY"));
+        for(i=0;i<num;i++){
+            datos[i]=prompt("Ingrese el dato respectivo");
+        }
+        for(i=0;i<num;i++){
+            document.write("<br>"+"<br>");       
+            document.write(datos[i]+"<br>");
+            console.log(datos[i]);
+        }
+    </script>
+    </center>
+</body>
+</html>
