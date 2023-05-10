@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(233, 10, 10);
+    }
+    
+    form {
+    background-color:rgb(6, 136, 223);
+    width:60%;
+    height:190px;
+    border-radius:30px;
+    border-style:solid;
+    padding: 35px;
+    margin: auto;
+    font-size: 20px;
+    }
+    
+    #boton{
+    display: flex;
+    justify-content:space-evenly;
+    padding-left: 10px;
+    }
+    
+    button{
+    background-color: black;
+    color:lightgray;
+    border-radius: 30px;
+    height: 50px;
+    width: 150px;
+    }

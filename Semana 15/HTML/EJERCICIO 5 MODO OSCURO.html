@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODO OSCURO</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/MODO OSCURO.css">
+
+</head>
+<body>
+    <center>
+        <h1>MODO DARK - LIGHT</h1>
+        <h2>EVENTO ONCHANGE - BOTON TOGGLE SWITCH</h2>
+        <br><br>
+        <div id="toggle">
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="ball"></div>
+            </label>
+            </div>
+            <script>
+            const chk = document.getElementById('chk');
+            chk.addEventListener('change', () => {
+            document.body.classList.toggle('dark');
+            });
+            </script>
+    </center>
+</body>
+</html>
