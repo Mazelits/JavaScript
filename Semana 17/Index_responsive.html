@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO HTML</title>
+    <!-- Seccion de Favicon -->
+    <link rel="shortcut icon" href="/IMG/HTML5.png" type="image/x-icon">
+    <!-- Seccion Link Pagina fontawesome para iconos miniaturas -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/Responsive.css">
+</head>
+<body>
+    <!-- SECCION DIV CONTENEDIR PRINCIPAL -->
+    <div id="grid-container">
+    <!-- SECCION ENCABEZADO WEB -->
+    <header id="header">
+        <img src="/IMG/incap.png" alt="" width="100" height="100">
+        <h1>APRENDER HTML CSS JAVASCRIPT PHP</h1>
+    </header>
+    
+        <!-- SECCION MENU OPCIONES -->
+        <nav id="menu">
+                <button id="openmenu" onclick="openMenu();"><i class="fas fa-bars"></i></button>
+            <ul class="mainmenu" id="mainMenu">
+                <a href="javasript:void(0)" id="closemenu" onclick="closeNav()">&times;</a>
+                <i class="fas fa-home"></i><li><a href="./Index_responsive.html"> INICIO</a></li>
+                <i class="fas fa-user-graduate"></i><li><a href="./HTML/VISOR GLIGHTBOX.html">CATALOGO</a></li>
+                <i class="fas fa-cart-arrow-down"></i><li><a href="./HTML/TIENDA ON.html">TIENDA ONLINE</a></li>
+                <i class="fab fa-wpforms"></i><li><a href=""> CONTACTO </a> 
+                </a></li>
+            </ul>
+        
+        <!-- SECCION BUSCADOR WEB-->
+            <div class="buscarbox">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Buscar">
+        </div>
+    <!-- Seccion Registro -->
+        <div id="reguser">
+        <i class="fas fa-user"></i>
+        <a href="">REGISTRESE</a>
+        </nav>
+        <!-- SECCION CONTENIDO PRINCIPAL PROGRAMAS -->
+            <center>
+                <section id="main">
+                    <figure>
+                        <img src="img/HTML5.png" alt="" width="100" height="100">
+                        <img src="img/css3.png" alt="" width="100" height="100">
+                        <img src="img/JAVASCRIPT.png" alt="" width="100" height="100">
+                        <img src="img/php.png" alt="" width="100" height="100">
+                    </figure>
+                    <br>
+                    <!-- SECCION PROGRAMAS DE INCAP CON ENLACES -->
+                    <article class="programa">
+                        <h1>SISTEMAS</h1>
+                        <a href="https://www.incap.edu.co/programas/auxiliar-en-operacion-de-programas-informaticos-y-bases-de-datos.html">
+                        <img src="/IMG/portatiles1.jpg" alt="" width="100" height="100"> </a>
+                    </article>
+
+                    <article class="programa">                        <h1>DISEÑO GRAFICO</h1>
+                        <a href="https://www.incap.edu.co/programas/auxiliar-comunicacion-grafica-publicitaria.html">
+                        <img src="/IMG/foto1.jpg" alt="" width="100" height="100"> </a>
+                    </article>
+                    
+                    <article class="programa">
+                        <h1>CONTABILIDAD</h1>
+                        <a href="https://www.incap.edu.co/programas/auxiliar-en-contabilidad-y-finanzas.html">
+                        <img src="/IMG/foto10.jpg" alt="" width="100" height="100"> </a>
+                    </article>
+                    
+                    <article class="programa">
+                        <h1>SEGURIDAD OCUPACIONAL</h1>
+                        <a href="https://www.incap.edu.co/programas/auxiliar-de-seguridad-en-el-trabajo.html">
+                        <img src="/IMG/foto4.jpg" alt="" width="100" height="100"> </a>
+                    </article>
+
+                    <article class="programa">
+                        <h1>ENFERMERIA Y SALUD ORAL</h1>
+                        <a href="https://www.incap.edu.co/programas/auxiliar-en-enfermeria.html">
+                        <img src="/IMG/foto11.png" alt="" width="100" height="100"> </a>
+                    </article>
+                    
+                    <article class="programa">
+                        <h1>BANCA Y FINANZAS</h1>
+                        <a href="https://www.incap.edu.co/programas/auxiliar-en-banca-y-servicios-financieros.html">
+                        <img src="/IMG/foto3.jpg" alt="" width="100" height="100"> </a>
+                </section>
+            </center>
+        <!-- SECCION BARRA LATERAL DERECHA -->
+        <aside id="sidebar"> 
+            <h1>VIDEOS DE INTERES</h1>
+            <br><br>
+            <h1>APRENDE HTML</h1>
+            <iframe width="250" height="265" src="https://www.youtube.com/embed/0AT35qjBpu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br><br>
+            <h1>APRENDE PHP</h1>
+            <iframe width="250" height="265" src="https://www.youtube.com/embed/boSmJasFPto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br><br>
+            <h1>APRENDE JAVASCRIPT</h1>
+            <iframe width="250" height="265" src="https://www.youtube.com/embed/Ez2j2qhAl9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </aside>
+        <footer id="footer">
+            <div id="redes">
+            <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a>
+            <a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        <p>DERECHOS RESERVADOS &copy;2023 Miguel</p>
+    </footer>
+    <!-- CIERRE DEL DIV CONTAINER  -->
+</div>
+<script src="./JS/indexnew.js"></script>    
+</body>
+</html>
