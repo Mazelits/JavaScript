@@ -1,0 +1,87 @@
+logo{
+    justify-content: center;
+    align-items: center;
+    
+}
+body {
+    background-color: #222222;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: cyan;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+form {
+    margin-top: 40px;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: cyan;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+table {
+    margin: 0 auto;
+    text-align: left;
+}
+
+th {
+    color: cyan;
+    font-weight: bold;
+    padding-right: 10px;
+    text-align: right;
+    vertical-align: top;
+}
+
+td {
+    padding-left: 10px;
+    vertical-align: top;
+}
+
+input[type="text"],
+select {
+    background-color: #333333;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 5px 10px;
+    width: 200px;
+}
+
+input[type="text"][disabled],
+select[disabled] {
+    background-color: #555555;
+    color: #aaaaaa;
+    cursor: not-allowed;
+}
+
+input[type="button"],
+input[type="reset"] {
+    background-color: cyan ;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
